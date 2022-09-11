@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "+8JhEWSIwEazbQuCGNCaxw6tmqdT01gj9fYV+qmAbtc=",
+  "Source": "CongestionTaxApi",
+  "BasePath": "_content/CongestionTaxApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

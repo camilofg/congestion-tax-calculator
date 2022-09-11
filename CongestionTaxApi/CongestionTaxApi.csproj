@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="ConfigFiles\HolydaysConfig.json" />
+    <Content Remove="ConfigFiles\HourRangeTaxConfig.json" />
+    <Content Remove="ConfigFiles\TollFreeVehiclesConfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="ConfigFiles\HolydaysConfig.json" />
+    <EmbeddedResource Include="ConfigFiles\HourRangeTaxConfig.json" />
+    <EmbeddedResource Include="ConfigFiles\TollFreeVehiclesConfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Congestion_Models" Version="1.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\netcore\congestion-tax-calculator-net-core.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,54 @@
+{
+  "HourRangesTaxes": [
+    {
+      "StartTime": "06:00",
+      "EndTime": "06:29",
+      "Tax": 8
+    },
+    {
+      "StartTime": "06:30",
+      "EndTime": "06:59",
+      "Tax": 13
+    },
+    {
+      "StartTime": "07:00",
+      "EndTime": "07:59",
+      "Tax": 18
+    },
+    {
+      "StartTime": "08:00",
+      "EndTime": "08:29",
+      "Tax": 13
+    },
+    {
+      "StartTime": "08:30",
+      "EndTime": "14:59",
+      "Tax": 8
+    },
+    {
+      "StartTime": "15:00",
+      "EndTime": "15:29",
+      "Tax": 13
+    },
+    {
+      "StartTime": "15:30",
+      "EndTime": "16:59",
+      "Tax": 18
+    },
+    {
+      "StartTime": "17:00",
+      "EndTime": "17:59",
+      "Tax": 13
+    },
+    {
+      "StartTime": "18:00",
+      "EndTime": "18:29",
+      "Tax": 8
+    },
+    {
+      "StartTime": "18:30",
+      "EndTime": "05:59",
+      "Tax": 0
+    }
+  ]
+}
