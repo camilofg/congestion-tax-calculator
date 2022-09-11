@@ -9,7 +9,7 @@
       "congestion-tax-calculator-tests/1.0.0": {
         "dependencies": {
           "Microsoft.NET.Test.Sdk": "17.1.0",
-          "congestion-tax-calculator-net-core": "1.0.1",
+          "congestion-tax-calculator-netcore": "1.0.0",
           "coverlet.collector": "3.1.2",
           "xunit": "2.4.1",
           "xunit.runner.visualstudio": "2.4.3"
@@ -1098,12 +1098,12 @@
         }
       },
       "xunit.runner.visualstudio/2.4.3": {},
-      "congestion-tax-calculator-net-core/1.0.1": {
+      "congestion-tax-calculator-netcore/1.0.0": {
         "dependencies": {
           "Congestion_Models": "1.0.2"
         },
         "runtime": {
-          "congestion-tax-calculator-net-core.dll": {}
+          "congestion-tax-calculator-netcore.dll": {}
         }
       }
     }
@@ -1765,7 +1765,7 @@
       "path": "xunit.runner.visualstudio/2.4.3",
       "hashPath": "xunit.runner.visualstudio.2.4.3.nupkg.sha512"
     },
-    "congestion-tax-calculator-net-core/1.0.1": {
+    "congestion-tax-calculator-netcore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

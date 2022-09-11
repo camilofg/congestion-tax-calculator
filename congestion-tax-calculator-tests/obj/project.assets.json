@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Congestion_Models/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Congestion_Models.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Congestion_Models.dll": {}
+        }
+      },
       "coverlet.collector/3.1.2": {
         "type": "package",
         "build": {
@@ -1670,10 +1679,34 @@
         "build": {
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
+      },
+      "congestion-tax-calculator-netcore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Congestion_Models": "1.0.2"
+        },
+        "compile": {
+          "bin/placeholder/congestion-tax-calculator-netcore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/congestion-tax-calculator-netcore.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "Congestion_Models/1.0.2": {
+      "sha512": "zJz2ahFMVtgujOwctqE9XhD8b5IoWHEjSDf9sL4O52SpOXrLadJnky2hOPsQLBslRVNhNGt6MNvxHFdFyoTcOw==",
+      "type": "package",
+      "path": "congestion_models/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        "congestion_models.1.0.2.nupkg.sha512",
+        "congestion_models.nuspec",
+        "lib/net6.0/Congestion_Models.dll"
+      ]
+    },
     "coverlet.collector/3.1.2": {
       "sha512": "wuLDIDKD5XMt0A7lE31JPenT7QQwZPFkP5rRpdJeblyXZ9MGLI8rYjvm5fvAKln+2/X+4IxxQDxBtwdrqKNLZw==",
       "type": "package",
@@ -5898,11 +5931,17 @@
         "xunit.runner.visualstudio.2.4.3.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "congestion-tax-calculator-netcore/1.0.0": {
+      "type": "project",
+      "path": "../congestion-tax-calculator-netcore/congestion-tax-calculator-netcore.csproj",
+      "msbuildProject": "../congestion-tax-calculator-netcore/congestion-tax-calculator-netcore.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.NET.Test.Sdk >= 17.1.0",
+      "congestion-tax-calculator-netcore >= 1.0.0",
       "coverlet.collector >= 3.1.2",
       "xunit >= 2.4.1",
       "xunit.runner.visualstudio >= 2.4.3"
@@ -5938,7 +5977,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Raul Camilo Forero G\\source\\repos\\congestion-tax-calculator\\congestion-tax-calculator-netcore\\congestion-tax-calculator-netcore.csproj": {
+              "projectPath": "C:\\Users\\Raul Camilo Forero G\\source\\repos\\congestion-tax-calculator\\congestion-tax-calculator-netcore\\congestion-tax-calculator-netcore.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

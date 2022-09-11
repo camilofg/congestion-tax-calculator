@@ -93,11 +93,11 @@ C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\congestion-
 C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\congestion-tax-calculator-tests\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\congestion-tax-calculator-tests\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\congestion-tax-calculator-tests\bin\Debug\net6.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\congestion-tax-calculator-tests\bin\Debug\net6.0\congestion-tax-calculator-net-core.dll
-C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\congestion-tax-calculator-tests\bin\Debug\net6.0\congestion-tax-calculator-net-core.pdb
 C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\congestion-tax-calculator-tests\obj\Debug\net6.0\congestion-tax-calculator-tests.csproj.CopyComplete
 C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\congestion-tax-calculator-tests\obj\Debug\net6.0\congestion-tax-calculator-tests.dll
 C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\congestion-tax-calculator-tests\obj\Debug\net6.0\refint\congestion-tax-calculator-tests.dll
 C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\congestion-tax-calculator-tests\obj\Debug\net6.0\congestion-tax-calculator-tests.pdb
 C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\congestion-tax-calculator-tests\obj\Debug\net6.0\congestion-tax-calculator-tests.genruntimeconfig.cache
 C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\congestion-tax-calculator-tests\obj\Debug\net6.0\ref\congestion-tax-calculator-tests.dll
+C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\congestion-tax-calculator-tests\bin\Debug\net6.0\congestion-tax-calculator-netcore.dll
+C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\congestion-tax-calculator-tests\bin\Debug\net6.0\congestion-tax-calculator-netcore.pdb
