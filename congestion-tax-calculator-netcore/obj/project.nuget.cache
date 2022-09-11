@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "4cIey4kylQrlg1uvqtIDRvkrFZOOaxhCAha4yh5kMxFp6VFqS0g1bNG7ZqfS+pz9FrYfVONmZeLnRVsLOqgY0A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Raul Camilo Forero G\\source\\repos\\congestion-tax-calculator\\congestion-tax-calculator-netcore\\congestion-tax-calculator-netcore.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Raul Camilo Forero G\\.nuget\\packages\\congestion_models\\1.0.2\\congestion_models.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

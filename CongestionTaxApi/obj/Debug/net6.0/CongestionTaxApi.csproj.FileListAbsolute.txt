@@ -17,8 +17,6 @@ C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\CongestionT
 C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\CongestionTaxApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\CongestionTaxApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\CongestionTaxApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\CongestionTaxApi\bin\Debug\net6.0\congestion-tax-calculator-net-core.dll
-C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\CongestionTaxApi\bin\Debug\net6.0\congestion-tax-calculator-net-core.pdb
 C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\CongestionTaxApi\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\CongestionTaxApi\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\CongestionTaxApi\obj\Debug\net6.0\scopedcss\bundle\CongestionTaxApi.styles.css
@@ -29,3 +27,4 @@ C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\CongestionT
 C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\CongestionTaxApi\obj\Debug\net6.0\CongestionTaxApi.genruntimeconfig.cache
 C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\CongestionTaxApi\obj\Debug\net6.0\ref\CongestionTaxApi.dll
 C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\CongestionTaxApi\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\CongestionTaxApi\bin\Debug\net6.0\congestion-tax-calculator-netcore.dll

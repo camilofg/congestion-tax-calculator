@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "congestion-tax-calculator-netcore/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Congestion_Models": "1.0.2"
+        },
+        "compile": {
+          "lib/net6.0/congestion-tax-calculator-netcore.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/congestion-tax-calculator-netcore.dll": {}
+        }
+      },
       "Congestion_Models/1.0.2": {
         "type": "package",
         "compile": {
@@ -623,23 +635,21 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
-      },
-      "congestion-tax-calculator-net-core/1.0.1": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Congestion_Models": "1.0.2"
-        },
-        "compile": {
-          "bin/placeholder/congestion-tax-calculator-net-core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/congestion-tax-calculator-net-core.dll": {}
-        }
       }
     }
   },
   "libraries": {
+    "congestion-tax-calculator-netcore/1.0.0": {
+      "sha512": "JmDAj9Eq+KUj9NFI6QqcS+eCql3VMuDt1BQGw5cy4hsyR5jTWB6iClrg4ZzB4zA9D7iMU4VF2a3GcXEKIBTHtw==",
+      "type": "package",
+      "path": "congestion-tax-calculator-netcore/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        "congestion-tax-calculator-netcore.1.0.0.nupkg.sha512",
+        "congestion-tax-calculator-netcore.nuspec",
+        "lib/net6.0/congestion-tax-calculator-netcore.dll"
+      ]
+    },
     "Congestion_Models/1.0.2": {
       "sha512": "zJz2ahFMVtgujOwctqE9XhD8b5IoWHEjSDf9sL4O52SpOXrLadJnky2hOPsQLBslRVNhNGt6MNvxHFdFyoTcOw==",
       "type": "package",
@@ -2865,11 +2875,6 @@
         "system.xml.xdocument.4.0.11.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
-    },
-    "congestion-tax-calculator-net-core/1.0.1": {
-      "type": "project",
-      "path": "../netcore/congestion-tax-calculator-net-core.csproj",
-      "msbuildProject": "../netcore/congestion-tax-calculator-net-core.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2877,7 +2882,7 @@
       "Congestion_Models >= 1.0.2",
       "Newtonsoft.Json >= 9.0.1",
       "Swashbuckle.AspNetCore >= 6.2.3",
-      "congestion-tax-calculator-net-core >= 1.0.1"
+      "congestion-tax-calculator-netcore >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2910,11 +2915,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "C:\\Users\\Raul Camilo Forero G\\source\\repos\\congestion-tax-calculator\\netcore\\congestion-tax-calculator-net-core.csproj": {
-              "projectPath": "C:\\Users\\Raul Camilo Forero G\\source\\repos\\congestion-tax-calculator\\netcore\\congestion-tax-calculator-net-core.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -2938,6 +2939,10 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.2.3, )"
+          },
+          "congestion-tax-calculator-netcore": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           }
         },
         "imports": [

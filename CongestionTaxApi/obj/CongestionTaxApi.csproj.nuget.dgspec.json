@@ -30,11 +30,7 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {
-              "C:\\Users\\Raul Camilo Forero G\\source\\repos\\congestion-tax-calculator\\netcore\\congestion-tax-calculator-net-core.csproj": {
-                "projectPath": "C:\\Users\\Raul Camilo Forero G\\source\\repos\\congestion-tax-calculator\\netcore\\congestion-tax-calculator-net-core.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -58,6 +54,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "congestion-tax-calculator-netcore": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             }
           },
           "imports": [
@@ -74,69 +74,6 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\Raul Camilo Forero G\\source\\repos\\congestion-tax-calculator\\netcore\\congestion-tax-calculator-net-core.csproj": {
-      "version": "1.0.1",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Raul Camilo Forero G\\source\\repos\\congestion-tax-calculator\\netcore\\congestion-tax-calculator-net-core.csproj",
-        "projectName": "congestion-tax-calculator-net-core",
-        "projectPath": "C:\\Users\\Raul Camilo Forero G\\source\\repos\\congestion-tax-calculator\\netcore\\congestion-tax-calculator-net-core.csproj",
-        "packagesPath": "C:\\Users\\Raul Camilo Forero G\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Raul Camilo Forero G\\source\\repos\\congestion-tax-calculator\\netcore\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Raul Camilo Forero G\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "C:\\Users\\Raul Camilo Forero G\\.nuget\\packages": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "dependencies": {
-            "Congestion_Models": {
-              "target": "Package",
-              "version": "[1.0.2, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

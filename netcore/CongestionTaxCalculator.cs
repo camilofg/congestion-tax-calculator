@@ -100,7 +100,6 @@ namespace congestion.calculator
         {
             return date.Month == 7 || date.ToString("dddd") == "Saturday" || date.ToString("dddd") == "Sunday";
         }
-
         #endregion
     }
 }

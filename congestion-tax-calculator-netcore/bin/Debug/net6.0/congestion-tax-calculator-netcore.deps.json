@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "congestion-tax-calculator-netcore/1.0.0": {
+        "dependencies": {
+          "Congestion_Models": "1.0.2"
+        },
+        "runtime": {
+          "congestion-tax-calculator-netcore.dll": {}
+        }
+      },
+      "Congestion_Models/1.0.2": {
+        "runtime": {
+          "lib/net6.0/Congestion_Models.dll": {
+            "assemblyVersion": "1.0.2.0",
+            "fileVersion": "1.0.2.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "congestion-tax-calculator-netcore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Congestion_Models/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zJz2ahFMVtgujOwctqE9XhD8b5IoWHEjSDf9sL4O52SpOXrLadJnky2hOPsQLBslRVNhNGt6MNvxHFdFyoTcOw==",
+      "path": "congestion_models/1.0.2",
+      "hashPath": "congestion_models.1.0.2.nupkg.sha512"
+    }
+  }
+}
