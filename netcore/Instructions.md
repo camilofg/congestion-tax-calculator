@@ -43,5 +43,5 @@ Even there were no security consideration the Web Api request a GUI that is also
 
 # Notes
 
-The implementation and design took a little bit more than 4 hours, it also includes the unit testing, and the present documentation. In the unit test there is room for improvements on how retrieve the data for the test. 
+The implementation and design took a little bit more than 4 hours, it also includes the unit testing, and the present documentation. In the unit test there is room for improvements on how retrieve the data for the test, and also increase code coverage for the Api project. 
 As a final consideration, this is a good use case to implement Azure functions that consumes the library and would be easier to scale. I'll continue with this implementation on my spare time in a different branch from the main of the current repository.
