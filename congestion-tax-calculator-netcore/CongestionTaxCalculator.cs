@@ -16,17 +16,21 @@ namespace congestion_tax_calculator_netcore
 
         private readonly IEnumerable<DateOnly> _holyDates;
         private readonly RangesTax _rangeTaxesList;
-        private readonly List<string> _freeTollVehicles;
+        private readonly List<string> _freeTollVehicles; 
+        private readonly double _gracePeriod;
+        private readonly int _dayMaxFee;
 
-        public CongestionTaxCalculator(IEnumerable<DateOnly> holyDates, RangesTax rangeTaxesList, List<string> freeTollVehicles)
+        public CongestionTaxCalculator(IEnumerable<DateOnly> holyDates, RangesTax rangeTaxesList, List<string> freeTollVehicles, double gracePeriod, int dayMaxFee)
         {
             _holyDates = holyDates;
             _rangeTaxesList = rangeTaxesList;
             _freeTollVehicles = freeTollVehicles;
+            _gracePeriod = gracePeriod;
+            _dayMaxFee = dayMaxFee;
         }
 
         #region Public methods
-        public int GetTax(Vehicle vehicle, DateTime[] dates)
+        public int GetTax(Vehicle vehicle, List<DateTime> dates)
         {
             var daysFee = new List<Tuple<DateOnly, int>>();
             int totalFee = 0;
@@ -40,16 +44,16 @@ namespace congestion_tax_calculator_netcore
                     var pivotDay = day.Select(x => x).ToList();
                     while (pivotDay.Count() > 0)
                     {
-                        var tollsInPeriod = pivotDay.Where(x => x <= pivotDay.FirstOrDefault().AddMinutes(60));
+                        var tollsInPeriod = pivotDay.Where(x => x <= pivotDay.FirstOrDefault().AddMinutes(_gracePeriod));
                         var hourFeePivot = 0;
                         foreach (var toll in tollsInPeriod)
                         {
                             hourFeePivot = Math.Max(hourFeePivot, GetTimeFee(TimeOnly.FromDateTime(toll)));
                         }
                         dayFee += hourFeePivot;
-                        if (dayFee >= 60)
+                        if (dayFee >= _dayMaxFee)
                         {
-                            dayFee = 60;
+                            dayFee = _dayMaxFee;
                             pivotDay.Clear();
                         }
                         pivotDay = pivotDay.Where(x => !tollsInPeriod.Contains(x)).ToList();

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "BvRdKfMmaTHp9MRAu5mChD5NOiV/tIQ7g/NcshTO6hJbeB9G8qpcxAbEfU1LYNwAYUg7BXzludq69LwKFnaJXw==",
+  "dgSpecHash": "Beo+5MIW2q/KOPvog2MEiOgeENHv7gExJUat9/tdMe1FOI6s5p6OtY/VDn2arbRzRlqMsqSsYm3aagpf2fW1ww==",
   "success": true,
   "projectFilePath": "C:\\Users\\Raul Camilo Forero G\\source\\repos\\congestion-tax-calculator\\congestion-tax-calculator-tests\\congestion-tax-calculator-tests.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Raul Camilo Forero G\\.nuget\\packages\\congestion_models\\1.0.2\\congestion_models.1.0.2.nupkg.sha512",
+    "C:\\Users\\Raul Camilo Forero G\\.nuget\\packages\\congestion_models\\1.0.3\\congestion_models.1.0.3.nupkg.sha512",
     "C:\\Users\\Raul Camilo Forero G\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\Raul Camilo Forero G\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
@@ -97,7 +97,7 @@
     "C:\\Users\\Raul Camilo Forero G\\.nuget\\packages\\xunit.extensibility.core\\2.4.1\\xunit.extensibility.core.2.4.1.nupkg.sha512",
     "C:\\Users\\Raul Camilo Forero G\\.nuget\\packages\\xunit.extensibility.execution\\2.4.1\\xunit.extensibility.execution.2.4.1.nupkg.sha512",
     "C:\\Users\\Raul Camilo Forero G\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.3\\xunit.runner.visualstudio.2.4.3.nupkg.sha512",
-    "C:\\Users\\Raul Camilo Forero G\\.nuget\\packages\\congestion-tax-calculator-netcore\\1.0.0\\congestion-tax-calculator-netcore.1.0.0.nupkg.sha512"
+    "C:\\Users\\Raul Camilo Forero G\\.nuget\\packages\\congestion-tax-calculator-netcore\\1.0.2\\congestion-tax-calculator-netcore.1.0.2.nupkg.sha512"
   ],
   "logs": []
 }

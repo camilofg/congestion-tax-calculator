@@ -3,6 +3,6 @@
     public record TaxDto
     {
         public Vehicle Vehicle { get; set; }
-        public DateTime[] Dates { get; set; }
+        public List<DateTime> Dates { get; set; }
     }
 }

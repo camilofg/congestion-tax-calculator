@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "asZxjpJMKyy2F9u9lW7+tB3h579Z/yayOrDe3oN7GaNx3u8CEJKNwe0sl01DyWeEXsgCt7+hKB1EUrzmRI0Log==",
+  "dgSpecHash": "DBVqhZsPQRMuQAoiVMhvavAfeKmvfr26bHEOngWX0BZH8zxnQstiB1lFx7/i6fnxniyAZZFLqWnxIyCzRdUtaQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Raul Camilo Forero G\\source\\repos\\congestion-tax-calculator\\CongestionTaxApi\\CongestionTaxApi.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Raul Camilo Forero G\\.nuget\\packages\\congestion-tax-calculator-netcore\\1.0.0\\congestion-tax-calculator-netcore.1.0.0.nupkg.sha512",
-    "C:\\Users\\Raul Camilo Forero G\\.nuget\\packages\\congestion_models\\1.0.2\\congestion_models.1.0.2.nupkg.sha512",
+    "C:\\Users\\Raul Camilo Forero G\\.nuget\\packages\\congestion-tax-calculator-netcore\\1.0.2\\congestion-tax-calculator-netcore.1.0.2.nupkg.sha512",
+    "C:\\Users\\Raul Camilo Forero G\\.nuget\\packages\\congestion_models\\1.0.3\\congestion_models.1.0.3.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\Raul Camilo Forero G\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.0.1\\microsoft.netcore.platforms.1.0.1.nupkg.sha512",

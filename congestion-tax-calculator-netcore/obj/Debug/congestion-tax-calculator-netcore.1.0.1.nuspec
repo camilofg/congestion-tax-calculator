@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>congestion-tax-calculator-netcore</id>
+    <version>1.0.1</version>
+    <authors>congestion-tax-calculator-netcore</authors>
+    <description>Grace period time and maximum daily amount to charge modified as input parameters</description>
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="Congestion_Models" version="1.0.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\congestion-tax-calculator-netcore\bin\Debug\net6.0\congestion-tax-calculator-netcore.dll" target="lib\net6.0\congestion-tax-calculator-netcore.dll" />
+  </files>
+</package>

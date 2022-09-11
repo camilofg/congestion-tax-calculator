@@ -8,8 +8,9 @@
     ".NETCoreApp,Version=v6.0": {
       "congestion-tax-calculator-tests/1.0.0": {
         "dependencies": {
+          "Congestion_Models": "1.0.3",
           "Microsoft.NET.Test.Sdk": "17.1.0",
-          "congestion-tax-calculator-netcore": "1.0.0",
+          "congestion-tax-calculator-netcore": "1.0.2",
           "coverlet.collector": "3.1.2",
           "xunit": "2.4.1",
           "xunit.runner.visualstudio": "2.4.3"
@@ -18,11 +19,11 @@
           "congestion-tax-calculator-tests.dll": {}
         }
       },
-      "Congestion_Models/1.0.2": {
+      "Congestion_Models/1.0.3": {
         "runtime": {
           "lib/net6.0/Congestion_Models.dll": {
-            "assemblyVersion": "1.0.2.0",
-            "fileVersion": "1.0.2.0"
+            "assemblyVersion": "1.0.3.0",
+            "fileVersion": "1.0.3.0"
           }
         }
       },
@@ -1098,9 +1099,9 @@
         }
       },
       "xunit.runner.visualstudio/2.4.3": {},
-      "congestion-tax-calculator-netcore/1.0.0": {
+      "congestion-tax-calculator-netcore/1.0.2": {
         "dependencies": {
-          "Congestion_Models": "1.0.2"
+          "Congestion_Models": "1.0.3"
         },
         "runtime": {
           "congestion-tax-calculator-netcore.dll": {}
@@ -1114,12 +1115,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Congestion_Models/1.0.2": {
+    "Congestion_Models/1.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-zJz2ahFMVtgujOwctqE9XhD8b5IoWHEjSDf9sL4O52SpOXrLadJnky2hOPsQLBslRVNhNGt6MNvxHFdFyoTcOw==",
-      "path": "congestion_models/1.0.2",
-      "hashPath": "congestion_models.1.0.2.nupkg.sha512"
+      "sha512": "sha512-HjcNbovvoQT2WyGD2rM/qY56mXHlGzH3GESS43yEOPiLHKKGvpKyC25v7PpSENb4EblPMMabf6WtBITRl2lBNQ==",
+      "path": "congestion_models/1.0.3",
+      "hashPath": "congestion_models.1.0.3.nupkg.sha512"
     },
     "coverlet.collector/3.1.2": {
       "type": "package",
@@ -1765,7 +1766,7 @@
       "path": "xunit.runner.visualstudio/2.4.3",
       "hashPath": "xunit.runner.visualstudio.2.4.3.nupkg.sha512"
     },
-    "congestion-tax-calculator-netcore/1.0.0": {
+    "congestion-tax-calculator-netcore/1.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -15,7 +15,7 @@ namespace CongestionTaxApi.Services
         }
 
         #region public methods
-        public int GetTax(Vehicle vehicle, DateTime[] dates)
+        public int GetTax(Vehicle vehicle, List<DateTime> dates)
         {
             return _congestionTaxCalculator.GetTax(vehicle, dates);
         }

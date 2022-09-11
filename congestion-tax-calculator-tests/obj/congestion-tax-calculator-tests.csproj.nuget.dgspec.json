@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Users\\Raul Camilo Forero G\\source\\repos\\congestion-tax-calculator\\congestion-tax-calculator-netcore\\congestion-tax-calculator-netcore.csproj": {
-      "version": "1.0.0",
+      "version": "1.0.2",
       "restore": {
         "projectUniqueName": "C:\\Users\\Raul Camilo Forero G\\source\\repos\\congestion-tax-calculator\\congestion-tax-calculator-netcore\\congestion-tax-calculator-netcore.csproj",
         "projectName": "congestion-tax-calculator-netcore",
@@ -110,9 +110,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Congestion_Models": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.1.0, )"
+            },
+            "congestion-tax-calculator-netcore": {
+              "target": "Package",
+              "version": "[1.0.2, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

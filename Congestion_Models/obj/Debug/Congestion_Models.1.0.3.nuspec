@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Congestion_Models</id>
+    <version>1.0.3</version>
+    <authors>Congestion_Models</authors>
+    <description>Modify tax dto and change vehicle to record type</description>
+    <dependencies>
+      <group targetFramework="net6.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Raul Camilo Forero G\source\repos\congestion-tax-calculator\Congestion_Models\bin\Debug\net6.0\Congestion_Models.dll" target="lib\net6.0\Congestion_Models.dll" />
+  </files>
+</package>

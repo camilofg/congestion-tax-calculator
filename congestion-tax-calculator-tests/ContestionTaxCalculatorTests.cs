@@ -1,6 +1,7 @@
 using Congestion_Models;
 using Congestion_Models.Configs;
 using congestion_tax_calculator_netcore;
+using Newtonsoft.Json;
 
 namespace congestion_tax_calculator_tests
 {
@@ -32,7 +33,7 @@ namespace congestion_tax_calculator_tests
 
             List<string> _freeTollVehicles = new List<string> { "Motorcycle", "Tractor", "Emergency", "Diplomat", "Foreign", "Military" };
 
-            sut = new CongestionTaxCalculator(_holyDates, _rangeTaxesList, _freeTollVehicles);
+            sut = new CongestionTaxCalculator(_holyDates, _rangeTaxesList, _freeTollVehicles, 60, 60);
         }
 
         [Fact]
@@ -87,18 +88,18 @@ namespace congestion_tax_calculator_tests
         [Fact]
         public void GetTax_ShouldReturn99ForCarInDateRange()
         {
-            var dates = new DateTime[] {
-                new DateTime(2013, 1, 2, 6, 10, 0),     //8
-                new DateTime(2013, 1, 2, 6, 15, 0),     //8
-                new DateTime(2013, 1, 2, 6, 37, 0),     //13
-                new DateTime(2013, 1, 2, 7, 19, 0),     //18
-                new DateTime(2013, 3, 11, 8, 10, 0),    //13
-                new DateTime(2013, 4, 12, 9, 10, 0),    //8
-                new DateTime(2013, 5, 15, 12, 10, 0),   //8
-                new DateTime(2013, 9, 1, 16, 10, 0),    //18
-                new DateTime(2013, 10, 17, 6, 10, 0),   //8
-                new DateTime(2013, 12, 21, 8, 10, 0),   //13
-            };
+            var dates = new List<DateTime>();
+            dates.Add(new DateTime(2013, 1, 2, 6, 10, 0));   //8
+            dates.Add(new DateTime(2013, 1, 2, 6, 15, 0));   //8
+            dates.Add(new DateTime(2013, 1, 2, 6, 37, 0));   //13
+            dates.Add(new DateTime(2013, 1, 2, 7, 19, 0));   //18
+            dates.Add(new DateTime(2013, 3, 11, 8, 10, 0));  //13
+            dates.Add(new DateTime(2013, 4, 12, 9, 10, 0));  //8
+            dates.Add(new DateTime(2013, 5, 15, 12, 10, 0));  //8
+            dates.Add(new DateTime(2013, 9, 1, 16, 10, 0));  //18
+            dates.Add(new DateTime(2013, 10, 17, 6, 10, 0));  //8
+            dates.Add(new DateTime(2013, 12, 21, 8, 10, 0)); //13
+
             var car = new Vehicle("Car");
             var result = sut.GetTax(car, dates);
             Assert.Equal(99, result);
@@ -107,18 +108,18 @@ namespace congestion_tax_calculator_tests
         [Fact]
         public void GetTax_ShouldReturn96ForCarInDateRange()
         {
-            var dates = new DateTime[] {
-                new DateTime(2013, 1, 2, 6, 10, 0),     //8
-                new DateTime(2013, 1, 2, 6, 15, 0),     //8
-                new DateTime(2013, 1, 2, 6, 37, 0),     //13
-                new DateTime(2013, 1, 2, 7, 19, 0),     //18
-                new DateTime(2013, 3, 11, 8, 10, 0),    //13
-                new DateTime(2013, 4, 12, 9, 10, 0),    //8
-                new DateTime(2013, 5, 15, 12, 10, 0),   //8
-                new DateTime(2013, 9, 1, 16, 10, 0),    //18
-                new DateTime(2013, 10, 21, 6, 10, 0),   //8
-                new DateTime(2013, 10, 21, 7, 10, 0),   //18
-            };
+            var dates = new List<DateTime>();
+            dates.Add(new DateTime(2013, 1, 2, 6, 10, 0));   //8
+            dates.Add(new DateTime(2013, 1, 2, 6, 15, 0));   //8
+            dates.Add(new DateTime(2013, 1, 2, 6, 37, 0));   //13
+            dates.Add(new DateTime(2013, 1, 2, 7, 19, 0));   //18
+            dates.Add(new DateTime(2013, 3, 11, 8, 10, 0));   //13
+            dates.Add(new DateTime(2013, 4, 12, 9, 10, 0));   //8
+            dates.Add(new DateTime(2013, 5, 15, 12, 10, 0));   //8
+            dates.Add(new DateTime(2013, 9, 1, 16, 10, 0));   //18
+            dates.Add(new DateTime(2013, 10, 21, 6, 10, 0));   //8
+            dates.Add(new DateTime(2013, 10, 21, 7, 10, 0));   //18
+
             var car = new Vehicle("Car");
             var result = sut.GetTax(car, dates);
             Assert.Equal(96, result);
@@ -127,16 +128,15 @@ namespace congestion_tax_calculator_tests
         [Fact]
         public void GetTax_ShouldReturnMax60ForCarInOneDay()
         {
-            var dates = new DateTime[] {
-                new DateTime(2013, 1, 2, 6, 10, 0),     //8
-                new DateTime(2013, 1, 2, 6, 15, 0),     //8
-                new DateTime(2013, 1, 2, 6, 37, 0),     //13
-                new DateTime(2013, 1, 2, 7, 19, 0),     //18
-                new DateTime(2013, 1, 2, 8, 10, 0),    //13
-                new DateTime(2013, 1, 2, 9, 10, 0),    //8
-                new DateTime(2013, 1, 2, 12, 10, 0),   //8
-                new DateTime(2013, 1, 2, 16, 10, 0),    //18
-            };
+            var dates = new List<DateTime>();
+            dates.Add(new DateTime(2013, 1, 2, 6, 10, 0));   //8
+            dates.Add(new DateTime(2013, 1, 2, 6, 15, 0));   //8
+            dates.Add(new DateTime(2013, 1, 2, 6, 37, 0));   //13
+            dates.Add(new DateTime(2013, 1, 2, 7, 19, 0));   //18
+            dates.Add(new DateTime(2013, 1, 2, 8, 10, 0));   //13
+            dates.Add(new DateTime(2013, 1, 2, 9, 10, 0));   //8
+            dates.Add(new DateTime(2013, 1, 2, 12, 10, 0));  //8
+            dates.Add(new DateTime(2013, 1, 2, 16, 10, 0));  //18
             var car = new Vehicle("Car");
             var result = sut.GetTax(car, dates);
             Assert.Equal(60, result);

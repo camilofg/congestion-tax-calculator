@@ -18,7 +18,9 @@ namespace CongestionTaxCalculatorApi
             var tollFreeVehicles = ResourcesHelper.ReadConfig<List<string>>(builder.Configuration["FreeTollVehiclesFile"]);
             var holydays = ResourcesHelper.ReadConfig<List<DateTime>>(builder.Configuration["HolydaysConfigFile"]).Select(x => DateOnly.FromDateTime(x));
 
-            var congestionTaxCalc = new CongestionTaxCalculator(holydays, rangeTaxes, tollFreeVehicles);
+            var congestionTaxCalc = new CongestionTaxCalculator(holydays, rangeTaxes, tollFreeVehicles,
+                Convert.ToDouble(builder.Configuration["GracePeriod"]),
+                Int32.Parse(builder.Configuration["DayMaxFee"]));
             builder.Services.AddSingleton((ICongestionTaxCalculator)congestionTaxCalc);
             builder.Services.AddTransient<ITaxCalculatorService, TaxCalculatorService>();
 

@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "congestion-tax-calculator-netcore/1.0.0": {
+      "congestion-tax-calculator-netcore/1.0.2": {
         "dependencies": {
           "Congestion_Models": "1.0.2"
         },
@@ -25,7 +25,7 @@
     }
   },
   "libraries": {
-    "congestion-tax-calculator-netcore/1.0.0": {
+    "congestion-tax-calculator-netcore/1.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

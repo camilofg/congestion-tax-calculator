@@ -5,8 +5,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	  <Description>Create dto models for consume Tax Calculator library</Description>
-	  <Version>1.0.2</Version>
+	  <Description>Modify tax dto and change vehicle to record type</Description>
+	  <Version>1.0.3</Version>
   </PropertyGroup>
 
 </Project>

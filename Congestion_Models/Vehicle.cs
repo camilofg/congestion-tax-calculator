@@ -1,6 +1,6 @@
 ﻿namespace Congestion_Models
 {
-    public class Vehicle
+    public record Vehicle
     {
         public string VehicleType { get; set; }
 

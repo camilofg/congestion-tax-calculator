@@ -12,7 +12,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "1.0.2",
+    "version": "1.0.3",
     "restore": {
       "projectUniqueName": "C:\\Users\\Raul Camilo Forero G\\source\\repos\\congestion-tax-calculator\\Congestion_Models\\Congestion_Models.csproj",
       "projectName": "Congestion_Models",

@@ -5,7 +5,7 @@ namespace congestion_tax_calculator_netcore
 {
     public interface ICongestionTaxCalculator
     {
-        int GetTax(Vehicle vehicle, DateTime[] dates);
+        int GetTax(Vehicle vehicle, List<DateTime> dates);
         int GetTollFee(Vehicle vehicle, DateTime date);
     }
 }
