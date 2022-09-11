@@ -106,6 +106,26 @@ namespace congestion_tax_calculator_tests
         }
 
         [Fact]
+        public void GetTax_ShouldReturnZeroForMotorcycleInDateRange()
+        {
+            var dates = new List<DateTime>();
+            dates.Add(new DateTime(2013, 1, 2, 6, 10, 0));   //8
+            dates.Add(new DateTime(2013, 1, 2, 6, 15, 0));   //8
+            dates.Add(new DateTime(2013, 1, 2, 6, 37, 0));   //13
+            dates.Add(new DateTime(2013, 1, 2, 7, 19, 0));   //18
+            dates.Add(new DateTime(2013, 3, 11, 8, 10, 0));  //13
+            dates.Add(new DateTime(2013, 4, 12, 9, 10, 0));  //8
+            dates.Add(new DateTime(2013, 5, 15, 12, 10, 0));  //8
+            dates.Add(new DateTime(2013, 9, 1, 16, 10, 0));  //18
+            dates.Add(new DateTime(2013, 10, 17, 6, 10, 0));  //8
+            dates.Add(new DateTime(2013, 12, 21, 8, 10, 0)); //13
+
+            var moto = new Vehicle("Motorcycle");
+            var result = sut.GetTax(moto, dates);
+            Assert.Equal(0, result);
+        }
+
+        [Fact]
         public void GetTax_ShouldReturn96ForCarInDateRange()
         {
             var dates = new List<DateTime>();

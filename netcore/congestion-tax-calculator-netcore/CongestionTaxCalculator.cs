@@ -32,6 +32,8 @@ namespace congestion_tax_calculator_netcore
         #region Public methods
         public int GetTax(Vehicle vehicle, List<DateTime> dates)
         {
+            if(IsTollFreeVehicle(vehicle)) return 0;
+
             var daysFee = new List<Tuple<DateOnly, int>>();
             int totalFee = 0;
             var datesByDay = dates.GroupBy(x => DateOnly.FromDateTime(x.Date));

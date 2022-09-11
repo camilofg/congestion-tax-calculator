@@ -6,12 +6,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	  <Version>1.0.2</Version>
-	  <Description>Change dates parameter from array to list</Description>
+	  <Version>1.0.3</Version>
+	  <Description>Add behavior for free toll vehicles</Description>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Congestion_Models" Version="1.0.2" />
+    <PackageReference Include="Congestion_Models" Version="1.0.3" />
   </ItemGroup>
 
 </Project>

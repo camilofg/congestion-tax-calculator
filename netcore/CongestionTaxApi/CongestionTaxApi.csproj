@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="congestion-tax-calculator-netcore" Version="1.0.2" />
+    <PackageReference Include="congestion-tax-calculator-netcore" Version="1.0.3" />
     <PackageReference Include="Congestion_Models" Version="1.0.3" />
     <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
