@@ -15,7 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{E83D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CongestionTaxApi", "..\CongestionTaxApi\CongestionTaxApi.csproj", "{1A2CBA11-7BA4-4374-9968-9F56EBCCBAE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "congestion-tax-calculator-netcore", "..\congestion-tax-calculator-netcore\congestion-tax-calculator-netcore.csproj", "{9B5F4F3C-676F-4F7C-BB4D-363B849541E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "congestion-tax-calculator-netcore", "..\congestion-tax-calculator-netcore\congestion-tax-calculator-netcore.csproj", "{9B5F4F3C-676F-4F7C-BB4D-363B849541E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CongestionTaxApiTests", "CongestionTaxApiTests\CongestionTaxApiTests.csproj", "{689AB986-4E9A-40FB-A9EA-6CB5C70D29D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{9B5F4F3C-676F-4F7C-BB4D-363B849541E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B5F4F3C-676F-4F7C-BB4D-363B849541E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B5F4F3C-676F-4F7C-BB4D-363B849541E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{689AB986-4E9A-40FB-A9EA-6CB5C70D29D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{689AB986-4E9A-40FB-A9EA-6CB5C70D29D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{689AB986-4E9A-40FB-A9EA-6CB5C70D29D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{689AB986-4E9A-40FB-A9EA-6CB5C70D29D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +54,7 @@ Global
 		{5DDDDF62-74C0-40EE-992E-E0E00A64B28D} = {70676D24-2B02-4522-B428-6F5E7DB1EAE9}
 		{1A2CBA11-7BA4-4374-9968-9F56EBCCBAE8} = {E4ACFDE9-05A4-4FAA-A9AD-12A54AF90AC9}
 		{9B5F4F3C-676F-4F7C-BB4D-363B849541E8} = {E83DCFEF-6EFD-47A5-BD68-206120F8305C}
+		{689AB986-4E9A-40FB-A9EA-6CB5C70D29D0} = {70676D24-2B02-4522-B428-6F5E7DB1EAE9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E8507915-5A49-4081-887C-977D0534FA33}

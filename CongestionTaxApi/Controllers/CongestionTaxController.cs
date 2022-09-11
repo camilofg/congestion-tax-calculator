@@ -22,16 +22,33 @@ namespace CongestionTaxApi.Controllers
         [HttpPost("GetTax")]
         public ActionResult GetTax([FromBody] TaxDto taxDto)
         {
-            var result = _taxCalculatorService.GetTax(taxDto.Vehicle, taxDto.Dates);
-            return StatusCode(200, result);
+            try
+            {
+                var result = _taxCalculatorService.GetTax(taxDto.Vehicle, taxDto.Dates);
+                return StatusCode(200, result);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                return StatusCode(500, ex);
+            }
+            
         }
 
 
         [HttpPost("GetTollFee")]
         public ActionResult GetTollFee([FromBody] TollFeeDto tollFeeDto)
         {
-            var result = _taxCalculatorService.GetTollFee(tollFeeDto.Vehicle, tollFeeDto.Date);
-            return StatusCode(200, result);
+            try
+            {
+                var result = _taxCalculatorService.GetTollFee(tollFeeDto.Vehicle, tollFeeDto.Date);
+                return StatusCode(200, result);
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                return StatusCode(500, ex);
+            }
         }
     }
 }
