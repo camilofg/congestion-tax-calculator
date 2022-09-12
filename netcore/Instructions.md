@@ -37,7 +37,7 @@ In the web api, the first three parameters are given by json files located in th
 
 # Security
 
-Even there were no security consideration the Web Api request a GUI that is also in the appsettings.json and compare the value given by the final user with this value and allows the request if it matches. Is implemented with a filter, that reads the context and retrieve the value as a header of the request. In swagger is requested the header as can be seen in the next picture>
+Even there were no security consideration the Web Api request a GUID that is also in the appsettings.json and compare the value given by the final user with this value and allows the request if it matches. Is implemented with a filter, that reads the context and retrieve the value as a header of the request. In swagger is requested the header as can be seen in the next picture>
 
 ![alt text](https://github.com/camilofg/congestion-tax-calculator/blob/main/netcore/Images/KeyAuthHeader.png?raw=true)
 
